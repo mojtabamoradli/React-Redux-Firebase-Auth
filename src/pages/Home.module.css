@@ -3,7 +3,6 @@
   justify-items: center;
   text-align: center;
   justify-content: center;
-
 }
 
 .h1 {
@@ -12,19 +11,17 @@
 }
 
 .react {
-color: #82D7F7;
+  color: #82d7f7;
 }
 
 .redux {
-  color: #704CB6;
-
+  color: #704cb6;
 }
 
 .firebase {
-  background: -webkit-linear-gradient(#F7CE54, #E78B37);
+  background: -webkit-linear-gradient(#f7ce54, #e78b37);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-
 }
 
 .image {
@@ -33,37 +30,43 @@ color: #82D7F7;
   margin-bottom: 30px;
 }
 
-
-
 .routes {
   width: 50%;
   margin-top: 30px;
-  /* margin-bottom: 20px; */
 }
 
-
-.featuresContainer {
+.featuresContainer1,
+.featuresContainer2 {
   display: flex;
   justify-content: center;
   gap: 40px;
 }
 
-.featuresContainer p {
+.featuresContainer1,
+.featuresContainer2 p {
   text-align: left;
 }
 
- @media (max-width: 760px) {
+@media (max-width: 760px) {
   .h1 {
     font-size: 30px;
   }
-  .image, .routes {
+  .image {
     width: 60%;
   }
-  .featuresContainer {
+  .routes {
+    width: 70%;
+  }
+  .featuresContainer1,
+  .featuresContainer2 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 0;
+  }
+  .featuresContainer2 {
+    padding-right: 15px;
   }
 }
 
@@ -71,20 +74,22 @@ color: #82D7F7;
   .h1 {
     font-size: 20px;
   }
-  .image, .routes {
-    width: 50%;
+  .image {
+    width: 70%;
+  }
+  .routes {
+    width: 80%;
   }
 }
-
 
 @media (max-width: 368px) {
   .h1 {
-    font-size: 15px;
+    font-size: 17px;
   }
-  .image, .routes {
-    width: 60%;
+  .image {
+    width: 75%;
+  }
+  .routes {
+    width: 85%;
   }
 }
-
-
- 
