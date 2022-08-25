@@ -5,17 +5,21 @@ import Navbar from "./Navbar";
 const Div = styled.div`
 width: 2rem;
 height: 2rem;
-position: fixed;
+// position: fixed;
 right: 30px;
 z-index: 20;
 display: none;
 cursor: pointer;
 
 
+
+
 @media (max-width: 768px) {
     display: flex;
     justify-content: space-around;
     flex-direction: column;
+    position: absolute;
+
 }
 
 div {
@@ -36,7 +40,10 @@ div {
         transform: ${(props) => (props.open ? "rotate(-45deg)" : "rotate(0)")}
     }
 
+
+
 `;
+
 
 export default class Hamburger extends Component {
   constructor() {
