@@ -9,7 +9,8 @@ import { logout } from "../redux/account/userAction";
 const Navbar = ({ open }) => {
   const { isLoggedIn } = useSelector((state) => state.user);
   const dispatch = useDispatch();
-  const Ul = styled.ul`
+
+    const Ul = styled.ul`
     list-style: none;
     display: flex;
     justify-content: right;
@@ -23,6 +24,7 @@ const Navbar = ({ open }) => {
       color: #fff;
       font-size: 1.2rem;
       font-weight: 600;
+
     }
 
     button {
@@ -45,6 +47,7 @@ const Navbar = ({ open }) => {
         display: flex;
         flex-direction: column;
         margin-top: 70px;
+
       }
 
       li {
@@ -62,6 +65,7 @@ const Navbar = ({ open }) => {
       }
     }
   `;
+
 
   return (
     <div>
