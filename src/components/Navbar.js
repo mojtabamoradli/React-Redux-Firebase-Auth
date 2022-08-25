@@ -9,7 +9,6 @@ import { logout } from "../redux/account/userAction";
 const Navbar = ({ open }) => {
   const { isLoggedIn } = useSelector((state) => state.user);
   const dispatch = useDispatch();
-
   const Ul = styled.ul`
     list-style: none;
     display: flex;
@@ -18,7 +17,7 @@ const Navbar = ({ open }) => {
     z-index: 15;
 
     li {
-        display: inline;
+      display: inline;
       list-style-type: none;
       text-decoration: none;
       color: #fff;
@@ -27,7 +26,7 @@ const Navbar = ({ open }) => {
     }
 
     button {
-        margin-left: 35px;
+      margin-left: 35px;
     }
 
     @media (max-width: 768px) {
@@ -38,20 +37,14 @@ const Navbar = ({ open }) => {
       right: 0;
       height: 100vh;
       width: 300px;
-      //   padding-top: 5.5 rem;
-      top: 40px;
 
-      transition: all 0.3 linear;
       transform: ${(props) => (props.open ? "translateX(0)" : "translateX(100%)")};
 
       ul {
-        margin-top: 10px;
-        margin-right: 35px;
+        margin: 10px 40px auto auto;
         display: flex;
         flex-direction: column;
-        align-items: center;
-        text-align: center;
-        align-content: center;
+        margin-top: 70px;
       }
 
       li {
@@ -61,7 +54,7 @@ const Navbar = ({ open }) => {
         align-items: center;
         text-align: center;
         align-content: center;
-        margin-top: 10px;
+        margin-top: 20px;
       }
 
       button {
