@@ -1,0 +1,90 @@
+.container {
+  align-items: center;
+  justify-items: center;
+  text-align: center;
+  justify-content: center;
+
+}
+
+.h1 {
+  font-size: 40px;
+  margin-top: 45px;
+}
+
+.react {
+color: #82D7F7;
+}
+
+.redux {
+  color: #704CB6;
+
+}
+
+.firebase {
+  background: -webkit-linear-gradient(#F7CE54, #E78B37);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+}
+
+.image {
+  width: 25%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+
+
+.routes {
+  width: 50%;
+  margin-top: 30px;
+  /* margin-bottom: 20px; */
+}
+
+
+.featuresContainer {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.featuresContainer p {
+  text-align: left;
+}
+
+ @media (max-width: 760px) {
+  .h1 {
+    font-size: 30px;
+  }
+  .image, .routes {
+    width: 60%;
+  }
+  .featuresContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (max-width: 568px) {
+  .h1 {
+    font-size: 20px;
+  }
+  .image, .routes {
+    width: 50%;
+  }
+}
+
+
+@media (max-width: 368px) {
+  .h1 {
+    font-size: 15px;
+  }
+  .image, .routes {
+    width: 60%;
+  }
+}
+
+
+ 
