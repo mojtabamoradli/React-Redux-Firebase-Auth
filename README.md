@@ -1,6 +1,5 @@
 # React, Redux, Firebase Authentication
 
-+ Demo: https://mojtabamoradli.ir/projects/rrf/
 + Demo Video: https://youtu.be/ooGYi6KwQWw
 
 ![Demo](https://github.com/mojtabamoradli/React-Redux-Firebase-Auth/blob/main/Demo.png?raw=true "Demo")
